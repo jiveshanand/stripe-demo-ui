@@ -96,7 +96,7 @@ const CreateCustomerForm = () => {
                 onClick={createCustomer}
                 className='w-full'
               >
-                Add New Customer
+                Add a New Customer
               </Button>
             </Space>
           </Card>
