@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CreateCustomerForm from './components/CreateCustomerForm';
+import { Layout } from 'antd';
+import Navigation from './components/Navigation';
 
-function App() {
+const { Header, Content, Footer } = Layout;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header>
+        <Navigation />
+      </Header>
+      <Content style={{ padding: '50px' }}>
+        <h1>Welcome to the Home Page</h1>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        ©2024 Created by Jivesh Anand
+      </Footer>
+    </Layout>
   );
-}
+};
 
 export default App;

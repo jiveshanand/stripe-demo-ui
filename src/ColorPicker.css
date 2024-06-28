@@ -1,0 +1,31 @@
+/* src/ColorPicker.css */
+
+.color-picker {
+  position: relative;
+  width: 50px;
+}
+
+.selected-color {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.color-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow here */
+}
+
+.color-option {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
